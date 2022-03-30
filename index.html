@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JogMan</title>
+	<style type="text/css">
+		.J1{
+		    width: 420px;
+		    height: 88px;
+		    margin: 10px 0px 5px 0px;
+		    padding: 10px;
+		    box-sizing: border-box;
+		    border: 1px solid #999999;
+		    background: #9999ff;
+		    color: #ffffff;
+		    font-size: 16px;
+		    cursor: pointer;
+	    	border-radius:5px;
+		}
+		.K1{
+		    width: 420px;
+		    height: 88px;
+			margin: 0px;
+		    padding: 10px;
+		    box-sizing: border-box;
+		    border: 1px solid #999999;
+		    background: #ff9999;
+		    color: #ffffff;
+		    font-size: 16px;
+		    cursor: pointer;
+	    	border-radius:5px;
+		}
+		#btn_J:active {background: #8888ee;}
+		#btn_K:active {background: #ee8888;} 
+	</style>
+	<script type="text/javascript" src="megaman.js"></script>	
+</head>
+<body>
+	　SOUND <select name="sound" id="sound">
+	<option value="0" selected>OFF</option>
+	<option value="1">ON</option>
+	</select>
+	<!--
+	　　MODE <select name="mode" id="mode">
+	<option value=1 selected>NORMAL</option>
+	<option value=2>KICK</option>
+	<option value=3>HOVER</option>
+	</select>-->
+	</br>
+<canvas id="gamecanvas" width="420" height="360" onclick="restart()"></canvas>
+</br>
+<button id="btn_J" onclick="click_J()" class="J1">J▲</button>
+</br>
+<button id="btn_K" onclick="click_K()" class="K1">K▼</button>
+<!--button id="btn_Share" onclick="showLink()" style="width:60px;height:80px;">Tweet</button-->
+</body>
+</html>
